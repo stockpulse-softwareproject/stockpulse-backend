@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/stockpulse', {
+mongoose.connect('mongodb+srv://tharushichamodya03:0GjO7C9UkCWmuSlB@cluster0.iydktcn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
