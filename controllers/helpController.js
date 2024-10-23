@@ -1,10 +1,8 @@
-// helpController.js
-const Question = require('../models/question'); // Import the Question model
-const User = require('../models/User'); // Import the User model (if needed for user validation)
+const Question = require('../models/question'); 
+const User = require('../models/User'); 
 
 // Submit a question
 exports.submitQuestion = async (req, res) => {
-  // Extract the question from the request body
   const { question } = req.body;
 
   // Validate that the question is provided
@@ -14,8 +12,8 @@ exports.submitQuestion = async (req, res) => {
 
   // Create a new Question instance
   const newQuestion = new Question({
-    question: question.trim(), // Trim whitespace from the question
-    user: req.user ? req.user.id : null, // Handle user authentication, use null if not authenticated
+    question: question.trim(), 
+    user: req.user ? req.user.id : null, 
   });
 
   try {
