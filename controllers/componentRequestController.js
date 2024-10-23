@@ -1,5 +1,3 @@
-// controllers/componentRequestController.js
-
 const ComponentRequest = require('../models/ComponentRequest');
 const Component = require('../models/component');
 
