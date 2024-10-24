@@ -1,5 +1,3 @@
-// models/ComponentRequest.js
-
 const mongoose = require('mongoose');
 
 const componentRequestSchema = new mongoose.Schema({

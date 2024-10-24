@@ -13,14 +13,14 @@ router.get('/', async (req, res) => {
 });
 
 // Add a new purchase
-router.post('/', async (req, res) => { // Change this line from app.post to router.post
-    console.log('Received purchase data:', req.body); // Log the data received
+router.post('/', async (req, res) => { 
+    console.log('Received purchase data:', req.body); 
     try {
         const purchase = new Purchase(req.body);
         await purchase.save();
         res.status(201).json(purchase);
     } catch (err) {
-        console.error('Error creating purchase:', err); // Log any errors
+        console.error('Error creating purchase:', err); 
         res.status(500).json({ error: 'Failed to create purchase' });
     }
 });

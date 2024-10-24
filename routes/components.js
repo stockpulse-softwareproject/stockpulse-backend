@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const componentController = require('../controllers/componentController');
 
-// Define routes and connect them to the controller methods
 router.get('/', componentController.getComponents);
 router.post('/', componentController.addComponent);
 router.put('/:id', componentController.updateComponent);

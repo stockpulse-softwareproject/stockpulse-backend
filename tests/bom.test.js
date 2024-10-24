@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app.js'); // Adjust the path to your app file
+const app = require('../app.js'); 
 const BoM = require('../models/BoM');
 const mongoose = require('mongoose');
 

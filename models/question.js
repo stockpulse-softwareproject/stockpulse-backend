@@ -7,7 +7,7 @@ const answerSchema = new mongoose.Schema({
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User', // Assuming you have a User model
+    ref: 'User', 
   },
   createdAt: {
     type: Date,
@@ -22,7 +22,7 @@ const questionSchema = new mongoose.Schema({
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User', // Assuming you have a User model
+    ref: 'User', 
   },
   answers: [answerSchema], // Array of answers
   createdAt: {

@@ -1,4 +1,3 @@
-// src/controllers/purchaseController.js
 const Purchase = require('../models/Purchase');
 
 // Get all purchases

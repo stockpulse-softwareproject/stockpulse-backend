@@ -1,5 +1,3 @@
-// routes/componentRequestRoutes.js
-
 const express = require('express');
 const router = express.Router();
 const componentRequestController = require('../controllers/componentRequestController');

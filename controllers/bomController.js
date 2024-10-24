@@ -5,12 +5,10 @@ const Component = require('../models/component');
 exports.createBoM = async (req, res) => {
   try {
     const { name, description, bomItems } = req.body;
-
-    // Ensure items are processed as an array of BoMItem objects
     const newBoM = new BoM({
       name,
       description,
-      items: bomItems, // Mongoose will automatically validate and embed the BoMItem schema
+      items: bomItems, 
     });
 
     console.log(`createBoM ${newBoM}`);

@@ -1,8 +1,8 @@
 const request = require('supertest');
 const mongoose = require('mongoose');
-const app = require('../app'); // Assuming app.js is your main express app file
+const app = require('../app'); 
 const Component = require('../models/component');
-jest.mock('../models/component'); // Mock the Component model for testing
+jest.mock('../models/component'); 
 
 describe('Component API', () => {
   // Test for Get All Components
@@ -133,6 +133,6 @@ describe('Component API', () => {
     });
   });
 
-  // Test for Get Low-Stock Components
+ 
   
 });
